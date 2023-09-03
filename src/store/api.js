@@ -2,8 +2,8 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 export const apiSlice = createApi({
     reducerPath: 'apiSlice',
     baseQuery: fetchBaseQuery({
-        // baseUrl: 'https://machine-minds-backend.onrender.com/',
-        baseUrl: 'http://localhost:8000/',
+        // baseUrl: 'http://localhost:8000/',
+        baseUrl: 'https://machine-minds-backend.onrender.com/',
     }),
     endpoints: (builder) => ({
         submitData: builder.mutation({
